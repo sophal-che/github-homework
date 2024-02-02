@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.carousel .carousel-item img{
+    height: 100vh;
+    object-fit:cover ;
+}
+.carousel .carousel-item{
+  position: relative;
+}
+.carousel .carousel-item::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.66);
+  position: absolute;
+}
+.navbar{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+} 
+.carousel .carousel-control-prev,
+.carousel-control-next{
+    z-index: 4;
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    background-color: #c8c8c8;
+    margin-top: 50vh;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.navbar .nav-item .nav-link{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero-content{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+
+}
+.hero-content h1{
+    font-size: 50px;
+    text-align: center;
+}
+.hero-content p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.hero-content .box{
+    width: 100px;
+    height: 4px;
+}
+.bordeer{
+    width: 50px;
+    height: 3px;
+}
+.icon{
+    width: 55px;
+    height: 50px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    color: orange;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    transition: 0.2s;
+}
+.row a{
+    text-decoration: none;
+}
+.title{
+    font-weight: bold;
+    color: black;
+    transition: 0.2s;
+}
+.row a:hover h5{
+    color: orange;
+
+}
+.row a:hover .icon{
+    color: white;
+    background-color: orange;
+
+}
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: #333;
+    position: relative;
+}
+.footer .copy{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 670px;
+    padding-top: 70px;
+}
+.footer .copy .p1{
+    color: white;
+    font-size: 17px;
+}
+.footer .copy h6{
+    color: white;
+    font-size: 14px;
+    padding: 3px;
+}
+.foot{
+    display: flex;
+    padding-left: 750px;
+}
+.foot a{
+    text-decoration: none;
+}
